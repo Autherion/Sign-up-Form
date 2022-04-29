@@ -1,0 +1,184 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	/* font: inherit; */
+	vertical-align: baseline;
+}
+
+
+@font-face {
+    font-family: norse-bold;
+    src: url(../fonts/Norse-Bold.otf);
+}
+
+/* left side column */
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+}
+
+.container {
+    width: 57%;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    background-image: url(../img/photo-1585202900225-6d3ac20a6962.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100vh 100%;
+    justify-content: flex-start;
+}
+
+.container > small {
+    margin-top: auto;
+    text-align: center;
+    color: white;
+}
+
+.side-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-top: 90px;
+    height: 22vh;
+    max-width: 170vh;
+    min-height: 16vh;
+}
+
+
+.side-container > img {
+    width: 70px;
+    height: 100px;
+}
+
+.side-container > div {
+    font-family: norse-bold, sans-serif;
+    font-size: 90px;
+    color: white;
+}
+
+/* Right side column */
+
+.right-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-size: auto;
+    margin: 0; 
+    padding: 0;
+    overflow: scroll;
+}
+
+h1 {
+    margin-top : 30px;
+    margin-bottom: -5px;
+    margin-left: 40px;
+    margin-right: 150px;
+    font-size: 1em;
+    font-weight: 600;
+    color: black;
+    font-family: sans-serif;
+}
+
+.box {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.box > h1 {
+    margin-left: 25px;
+}
+
+form {
+    margin-left: 30px;
+    margin-top: 30px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    font-weight: 500;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-shadow: 10px 5px 5px #F5F5F5;
+}
+
+.inputs {
+    margin-top: 7px;
+    margin-left: -4px;
+    padding-top: 15px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+input {
+    width: 45%;
+    height: 1.4em;
+    border-radius: 4px;
+    border: 1px solid #E5E7EB;
+    outline: none;
+}
+
+button {
+    background: none;
+    border: none;
+    border-radius: 8px;
+    padding: 15px;
+    font-size: 1em;
+    background-color: #596D48;
+    color: white;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-left: 6%;
+    transition: background-color .2s ease-in;
+    height: 50px;
+    width: 25%;
+    font-weight: 500;
+}
+
+label {
+    font-size: 0.7em;
+    font-weight: 600;
+    padding-bottom: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:#333;
+}
+
+.login {
+    margin: 20px;
+    margin-left: 6%;
+    font-weight: 600;
+    font-size: 0.9em;
+}
+
+input:focus {
+    border: 1px solid #0847c4;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+    outline: none;
+}
+
+a:visited{
+    color: #596D48;
+}
