@@ -22,7 +22,7 @@ time, mark, audio, video {
 
 @font-face {
     font-family: norse-bold;
-    src: url(../fonts/Norse-Bold.otf);
+    src: url(/fonts/Norse-Bold.otf);
 }
 
 /* left side column */
@@ -41,7 +41,7 @@ body {
     display: flex;
     position: relative;
     flex-direction: column;
-    background-image: url(../img/photo-1585202900225-6d3ac20a6962.avif);
+    background-image: url(/img/photo-1585202900225-6d3ac20a6962.avif);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100vh 100%;
